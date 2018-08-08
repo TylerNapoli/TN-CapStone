@@ -67,7 +67,8 @@ body{
     .navbar div {
         display: flex;
     }
-}@media (max-width: 48em) {
+}
+@media (max-width: 48em) {
     .navbar.active .toggle {
         background: rgb(27, 104, 60);
         color: white;
@@ -77,14 +78,19 @@ body{
     }
     .navbar.active div {
         display: block;
-    }
 }
-#pricing-table {
+}
+#pricing-table__coffee {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
+#pricing-table__clothes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .package {
     -webkit-transition: background-color 500ms ease-out 1s;
     -moz-transition: background-color 500ms ease-out 1s;
