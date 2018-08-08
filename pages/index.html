@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Coffee Bean</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <link href="../src/styles/home.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="toggle hamburger" id="navHamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="index.html" class="brand">Bean's shop</a>
+
+        <div class="left">
+            <a href="coffee.html" class="link">Foods</a>
+            <a href="clothes.html" class="link">Clothes</a>
+        </div>
+
+        <div class="right">
+            <a href="#" class="toggle arrowdown" id="arrowDown">
+                <i class="fas fa-sort-down"></i>
+            </a>
+            <a href="#" class="toggle shoppingbasket" id="shoppingBasket">
+                <i class="fas fa-shopping-basket"></i>
+            </a>
+            <a href="#" class="link">Settings</a>
+        </div>
+    </div>
+
+    <div id="pricing-table__limitedtimeoffer">
+        <div class="package">
+            <h2>Brand new!</h2>
+            <p>Coffee</p>
+            <p>$0.44/fluid ounce</p>
+        </div>
+           
+        <div class="package">
+            <h2>Not here for long!</h2>
+            <p>Buy one T-shirt = Free coffee</p>
+            <p>$19.99</p>
+        </div>
+           
+        <div class="package">
+            <h2>Limited!</h2>
+            <p>Hoodie and Coffee</p>
+            <p>$34.99</p>
+        </div>
+    </div>
+
+        <div>
+    </div>
+</body>
+
+<script>
+        const navHamburger = document.querySelector('#navHamburger');
+        navHamburger.addEventListener('click', (e) => {
+            navHamburger.parentElement.classList.toggle('active');
+        })
+    </script>
+    
+</html>

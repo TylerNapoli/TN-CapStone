@@ -59,7 +59,7 @@ body{
     .navbar .right {
         justify-content: flex-end;
     }
-    .navbar .toggle {
+    .navbar .hamburger {
         display: none;
     }
 }
@@ -78,24 +78,22 @@ body{
     }
     .navbar.active div {
         display: block;
+    }
 }
-}
-#pricing-table__coffee {
+#pricing-table__coffee,
+#pricing-table__clothes,
+#pricing-table__limitedtimeoffer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-#pricing-table__clothes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
 }
 
 .package {
-    -webkit-transition: background-color 500ms ease-out 1s;
-    -moz-transition: background-color 500ms ease-out 1s;
-    -o-transition: background-color 500ms ease-out 1s;
-    transition: background-color 500ms ease-out 1s;
+    -webkit-transition: background-color 500ms ease-out;
+    -moz-transition: background-color 500ms ease-out;
+    -o-transition: background-color 500ms ease-out;
+    transition: background-color 500ms ease-out;
     background-color: #e8e8e8;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
