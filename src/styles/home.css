@@ -1,47 +1,106 @@
+/* global css */
 html {
-    font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
-body{
-    margin: 0px;
-    background-color: cadetblue
+
+body {
+  margin: 0px;
+  background-color: cadetblue;
 }
-.navbar{
-    background: seagreen;
+
+/* navbar */
+.navbar {
+  background: seagreen;
+  display: flex;
 }
-.navbar div{
-    display: none;
+
+.navbar .link {
+  width: auto;
 }
+
+.navbar .left, .navbar .right {
+  display: flex;
+  flex: 1;
+}
+
+.navbar .right {
+  justify-content: flex-end;
+}
+
+.arrow-dropdown {
+  background-color: #1b683c;
+  display: block;
+  text-align: center;
+  padding: 1em;
+  color: aliceblue;
+  width: 200px;
+}
+
 .navbar .toggle,
 .navbar .brand {
-    display: inline-block;
+  display: inline-block;
 }
+
+.navbar .hamburger {
+  display: none;
+}
+
 .navbar .link {
-    display: block;
-    text-align: center;
-    padding: 1em;
-    text-decoration: none;
-    background: rgb(27, 104, 60);
-    color: white;
+  display: block;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+  background: #1b683c;
+  color: aliceblue;
 }
+
 .navbar .link:hover,
 .navbar .link:active {
-    color: rgb(27, 104, 60);
-    background: white;
+  color: #1b683c;
+  background: aliceblue;
 }
+
 .navbar .brand {
-    width: 10em;
-    text-align: center;
-    padding: 1em;
-    color: white;
+  width: 10em;
+  text-align: center;
+  padding: 1em;
+  color: aliceblue;
 }
+
 .navbar a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 .navbar .toggle {
-    padding: 1em;
-    color: black;
+  padding: 1em;
+  color: palegreen;
 }
-@media (min-width: 48em) {
+
+@media (max-width: 550px) {
+
+  .navbar .left, .navbar .right .link {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: inline-block;
+  }
+
+  .navbar.active .toggle {
+    background: #1b683c;
+    color: aliceblue;
+  }
+
+  .navbar .brand {
+    text-align: left;
+  }
+
+  .navbar.active div {
+    display: block;
+  }
+}
+
+/* @media (min-width: 48em) {
     .navbar {
         display: flex;
     }
@@ -62,8 +121,11 @@ body{
     .navbar .hamburger {
         display: none;
     }
-}
-@media (min-width: 48em) {
+    .arrowdown:hover {
+        background-color: black; 
+    }
+} */
+/* @media (min-width: 48em) {
     .navbar div {
         display: flex;
     }
@@ -71,7 +133,7 @@ body{
 @media (max-width: 48em) {
     .navbar.active .toggle {
         background: rgb(27, 104, 60);
-        color: white;
+        color: aliceblue;
     }
     .navbar .brand {
         text-align: left;
@@ -79,33 +141,45 @@ body{
     .navbar.active div {
         display: block;
     }
-}
+} */
 #pricing-table__coffee,
 #pricing-table__clothes,
 #pricing-table__limitedtimeoffer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
 .package {
-    -webkit-transition: background-color 500ms ease-out;
-    -moz-transition: background-color 500ms ease-out;
-    -o-transition: background-color 500ms ease-out;
-    transition: background-color 500ms ease-out;
-    background-color: #e8e8e8;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    padding: 20px;
-    margin: 50px;
-    font-size: 1.2em;
-    border-bottom: 10px solid  rgb(27, 104, 60);
-    width: 200px;
+  -webkit-transition: background-color 500ms ease-out;
+  -moz-transition: background-color 500ms ease-out;
+  -o-transition: background-color 500ms ease-out;
+  transition: background-color 500ms ease-out;
+  background-color: aliceblue;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 50px;
+  font-size: 1.2em;
+  border-bottom: 10px solid #1b683c;
+  width: 200px;
 }
+
 .package:hover {
-    background-color: rgb(27, 104, 60);
-    color: white;
-    cursor: pointer;
+  background-color: #1b683c;
+  color: aliceblue;
+  cursor: pointer;
 }
+
+/* @media (min-width: 50em) {
+    .right div {
+        display: flex;
+    }
+    .right.active div {
+        display: block;
+    }
+} */
+
+/*# sourceMappingURL=../css/home.map */
